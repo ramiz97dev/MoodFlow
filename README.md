@@ -2,9 +2,13 @@
 
 ## Overview
 
-MoodFlow is an iOS music journal application built with SwiftUI. The idea is to organize music not only by artist or track name, but also by the **mood and emotional character of a track**.
+MoodFlow is an iOS music journal application built with SwiftUI.
 
-The app was designed with DJs and music enthusiasts in mind. DJs can build a personal track collection and use moods, notes and atmosphere to rediscover music when preparing sets. At the same time, MoodFlow can be used by any music listener as a personal music journal for tracks, emotions and memories.
+The idea behind MoodFlow is to organize music not only by artist or track name, but also by the **mood and emotional character of a track**.
+
+The app was designed with DJs and music enthusiasts in mind. DJs can build a personal track collection and use moods, notes and atmosphere to rediscover music when preparing sets.
+
+At the same time, MoodFlow can be used by any music listener as a personal music journal for tracks, emotions and memories.
 
 The project combines a native iOS application with local Core Data storage and a PHP/MySQL backend for online inspiration data.
 
@@ -12,36 +16,38 @@ The project combines a native iOS application with local Core Data storage and a
 
 ## Concept
 
-MoodFlow focuses on the connection between **music and emotion**. Tracks can be saved together with a mood such as melancholic, energetic, dreamy, dark or peaceful, as well as personal notes, dates and images.
+MoodFlow focuses on the connection between **music and emotion**.
 
-For DJs, this can make it easier to find tracks that fit a particular atmosphere when building a set. For regular listeners, it works as a personal music diary and collection.
+Tracks can be saved together with their mood, personal notes, date and image. For DJs, this can make it easier to find tracks with a particular atmosphere when preparing a set. For regular listeners, it works as a personal music diary and collection.
+
+Examples of moods include **Melancholic**, **Energetic**, **Dreamy**, **Dark**, **Calm** and **Relaxed**.
 
 ---
 
 ## Tech Stack
 
-* Swift / SwiftUI
-* Xcode
-* Core Data
-* PHP
-* MySQL
-* HTTP / JSON
-* AsyncImage
+- Swift / SwiftUI
+- Xcode
+- Core Data
+- PHP
+- MySQL
+- HTTP / JSON
+- AsyncImage
 
 ---
 
 ## Features
 
-* Create personal music journal entries
-* Add title, mood, artist, track, notes, date and image
-* Organize tracks by mood and atmosphere
-* Edit and delete saved entries
-* Mark tracks as favorites
-* Browse a dedicated Favorites view
-* Discover inspiration tracks from an online database
-* Save inspiration tracks to the local journal
-* Store personal journal data locally using Core Data
-* Load images for online inspiration tracks
+- Create personal music journal entries
+- Add title, mood, artist, track, notes, date and image
+- Organize tracks by mood and atmosphere
+- Edit and delete saved entries
+- Mark tracks as favorites
+- Browse a dedicated Favorites view
+- Discover inspiration tracks from an online database
+- Save inspiration tracks to the local journal
+- Store personal journal data locally using Core Data
+- Load images for online inspiration tracks
 
 ---
 
@@ -49,10 +55,10 @@ For DJs, this can make it easier to find tracks that fit a particular atmosphere
 
 MoodFlow contains four main areas:
 
-* **Journal** – displays locally saved music entries
-* **Favorites** – shows tracks marked as favorites
-* **Add Entry** – creates a new personal journal entry
-* **Ideas / Inspirations** – loads inspiration tracks from the online database
+- **Journal** – displays locally saved music entries
+- **Favorites** – shows tracks marked as favorites
+- **Add Entry** – creates a new personal journal entry
+- **Ideas / Inspirations** – loads inspiration tracks from the online database
 
 ### Data Flow
 
@@ -76,19 +82,23 @@ Personal journal data is stored locally using Core Data. Inspiration data is loa
 
 ## Screenshots
 
-<p align="center">
-  <img src="screenshots/Journal.png" width="30%" alt="MoodFlow Journal">
-  &nbsp;
-  <img src="screenshots/Add-entry.png" width="30%" alt="MoodFlow Add Entry">
-  &nbsp;
-  <img src="screenshots/Ideas.png" width="30%" alt="MoodFlow Inspirations">
-</p>
+### Journal
+
+![MoodFlow Journal](screenshots/Journal.png)
+
+### Add Entry
+
+![MoodFlow Add Entry](screenshots/Add-entry.png)
+
+### Inspirations
+
+![MoodFlow Inspirations](screenshots/Ideas.png)
 
 ---
 
 ## Demo
 
-Watch a short demo showing the main features and user flow of MoodFlow.
+A short video demonstrates the main features and user flow of MoodFlow.
 
 ▶️ **[Watch MoodFlow Demo on YouTube](https://youtube.com/shorts/S6lWnSLOfik?feature=share)**
 
@@ -96,23 +106,25 @@ Watch a short demo showing the main features and user flow of MoodFlow.
 
 ## Backend
 
-The backend uses PHP and MySQL to provide inspiration track data as JSON. Database credentials are intentionally not included in this public repository.
+The backend uses **PHP and MySQL** to provide inspiration track data to the iOS application as JSON.
+
+Database credentials are intentionally not included in this public repository.
 
 ---
 
 ## Requirements
 
-* macOS
-* Xcode
-* iOS Simulator or iPhone
+- macOS
+- Xcode
+- iOS Simulator or iPhone
 
 ---
 
 ## Notes
 
-Personal journal entries, favorites and locally saved images are stored on the device using Core Data. The **Inspirations** section requires an internet connection and access to the PHP/MySQL backend.
+Personal journal entries, favorites and locally saved images are stored on the device using Core Data.
 
-If the original development server is unavailable, the local journal functionality can still be used independently.
+The **Inspirations** section requires an internet connection and access to the PHP/MySQL backend. If the original development server is unavailable, the local journal functionality can still be used independently.
 
 ---
 
