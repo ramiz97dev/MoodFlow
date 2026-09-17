@@ -84,10 +84,6 @@ Personal journal data is stored locally using Core Data. Inspiration data is loa
   <img src="screenshots/Ideas.png" width="30%" alt="MoodFlow Inspirations">
 </p>
 
-<p align="center">
-  <b>Journal</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Add Entry</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Inspirations</b>
-</p>
-
 ---
 
 ## Demo
