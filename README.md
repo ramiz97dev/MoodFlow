@@ -1,4 +1,4 @@
-# MoodFlow
+# moodFlow
 
 ## Overview
 
