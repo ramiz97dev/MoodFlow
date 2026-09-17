@@ -100,7 +100,7 @@ Personal journal data is stored locally using Core Data. Inspiration data is loa
 
 A short video demonstrates the main features and user flow of MoodFlow.
 
-▶️ **[Watch MoodFlow Demo on YouTube](https://youtube.com/shorts/S6lWnSLOfik?feature=share)**
+**[Watch MoodFlow Demo on YouTube](https://youtube.com/shorts/S6lWnSLOfik?feature=share)**
 
 ---
 
