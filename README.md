@@ -1,16 +1,10 @@
-# MoodFlow
+# MoodFlow 🎵
 
 ## Overview
 
-MoodFlow is an iOS music journal application built with SwiftUI.
+MoodFlow is an iOS music journal application built with SwiftUI. The idea is to organize music not only by artist or track name, but also by the **mood and emotional character of a track**.
 
-The idea behind MoodFlow is to organize music not only by artist or track name, but also by the **mood and emotional character of a track**.
-
-The app was originally designed with DJs and music enthusiasts in mind. When preparing a DJ set, the atmosphere and feeling of a track can be just as important as its genre or BPM. MoodFlow allows users to build a personal collection of tracks and describe the mood, feeling or atmosphere they associate with each one.
-
-This can make it easier to rediscover tracks and select music that fits the desired direction of a DJ set.
-
-At the same time, MoodFlow is not limited to DJs. Any music listener can use it as a personal music journal to collect favorite tracks, connect them with memories or emotions, add notes and images, and organize their own music discoveries.
+The app was designed with DJs and music enthusiasts in mind. DJs can build a personal track collection and use moods, notes and atmosphere to rediscover music when preparing sets. At the same time, MoodFlow can be used by any music listener as a personal music journal for tracks, emotions and memories.
 
 The project combines a native iOS application with local Core Data storage and a PHP/MySQL backend for online inspiration data.
 
@@ -18,29 +12,15 @@ The project combines a native iOS application with local Core Data storage and a
 
 ## Concept
 
-Instead of treating music as just a list of songs, MoodFlow focuses on the connection between **music and emotion**.
+MoodFlow focuses on the connection between **music and emotion**. Tracks can be saved together with a mood such as melancholic, energetic, dreamy, dark or peaceful, as well as personal notes, dates and images.
 
-For example, a track can be described as:
-
-* Melancholic
-* Energetic
-* Dreamy
-* Dark
-* Peaceful
-* Reflective
-
-Users can save tracks together with these moods, personal notes, dates and images.
-
-For DJs, this creates a personal collection that can help when searching for tracks with a particular atmosphere while preparing a set.
-
-For regular listeners, it works as a music diary where songs can be connected with personal feelings, moments and memories.
+For DJs, this can make it easier to find tracks that fit a particular atmosphere when building a set. For regular listeners, it works as a personal music diary and collection.
 
 ---
 
 ## Tech Stack
 
-* Swift
-* SwiftUI
+* Swift / SwiftUI
 * Xcode
 * Core Data
 * PHP
@@ -54,14 +34,13 @@ For regular listeners, it works as a music diary where songs can be connected wi
 
 * Create personal music journal entries
 * Add title, mood, artist, track, notes, date and image
-* Organize tracks around their mood and atmosphere
-* Edit existing journal entries
-* Delete saved entries
+* Organize tracks by mood and atmosphere
+* Edit and delete saved entries
 * Mark tracks as favorites
-* Browse favorite tracks in a dedicated Favorites view
+* Browse a dedicated Favorites view
 * Discover inspiration tracks from an online database
 * Save inspiration tracks to the local journal
-* Store personal data locally using Core Data
+* Store personal journal data locally using Core Data
 * Load images for online inspiration tracks
 
 ---
@@ -72,7 +51,7 @@ MoodFlow contains four main areas:
 
 * **Journal** – displays locally saved music entries
 * **Favorites** – shows tracks marked as favorites
-* **Add Entry** – allows users to create a new personal journal entry
+* **Add Entry** – creates a new personal journal entry
 * **Ideas / Inspirations** – loads inspiration tracks from the online database
 
 ### Data Flow
@@ -91,27 +70,37 @@ Core Data (LocalTrack)
 Journal / Favorites
 ```
 
-Personal journal data is stored locally using Core Data.
+Personal journal data is stored locally using Core Data. Inspiration data is loaded from the PHP/MySQL backend and can be saved into the local journal.
 
-The Inspirations section receives track data from a MySQL database through a PHP backend. When an inspiration track is saved, it is added to the local Core Data journal.
+---
+
+## Screenshots
+
+<p align="center">
+  <img src="screenshots/Journal.png" width="30%" alt="MoodFlow Journal">
+  &nbsp;
+  <img src="screenshots/Add-entry.png" width="30%" alt="MoodFlow Add Entry">
+  &nbsp;
+  <img src="screenshots/Ideas.png" width="30%" alt="MoodFlow Inspirations">
+</p>
+
+<p align="center">
+  <b>Journal</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Add Entry</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Inspirations</b>
+</p>
 
 ---
 
 ## Demo
 
-A short screen recording demonstrates the main features and user flow of MoodFlow.
+Watch a short demo showing the main features and user flow of MoodFlow.
 
-**▶ [Watch MoodFlow Demo](demo/MoodFlow_Demo.mov)**
+▶️ **[Watch MoodFlow Demo on YouTube](https://youtube.com/shorts/S6lWnSLOfik?feature=share)**
 
 ---
 
 ## Backend
 
-The `server` folder contains the PHP scripts and a MySQL database export used during development.
-
-The PHP backend connects the iOS application with the MySQL database and provides the inspiration data as JSON.
-
-Database credentials are intentionally not included in this public repository.
+The backend uses PHP and MySQL to provide inspiration track data as JSON. Database credentials are intentionally not included in this public repository.
 
 ---
 
@@ -125,9 +114,7 @@ Database credentials are intentionally not included in this public repository.
 
 ## Notes
 
-Personal journal entries, favorites and locally saved images are stored on the device using Core Data.
-
-The **Inspirations** section requires an internet connection and access to the PHP/MySQL backend.
+Personal journal entries, favorites and locally saved images are stored on the device using Core Data. The **Inspirations** section requires an internet connection and access to the PHP/MySQL backend.
 
 If the original development server is unavailable, the local journal functionality can still be used independently.
 
